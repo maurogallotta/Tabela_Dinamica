@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: solid, 1px, black;
+            -webkit-box-shadow: 52px 54px 54px -4px rgba(0,0,0,0.75);
+            -moz-box-shadow: 52px 54px 54px -4px rgba(0,0,0,0.75);
+            box-shadow: 52px 54px 54px -4px rgba(0,0,0,0.75);
+        }
+        table thead th {
+            background-color: black;
+            color: white;
+        }
+        table tr:nth-child(even) {
+            background-color :aquamarine;
+        }
+        table tr:hover td {
+            background-color :darkgray;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+        table th:nth-child(even) {
+            background-color: bisque;
+        }
+        table th {
+            background-color:lightgray
+        }
+        table tfoot td {
+            background-color: darksalmon;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <table summary="Adicionar uma descrição(resumo) referente a tabela que esta sendo apresentada" align="center" cellpadding="12" cellspacing="0">
+        <caption>Do um Nome a Esta Tabela com Caption</caption>
+        <thead>
+            <tr>
+                <td colspan="4"><center>Juntamos as 4 Colunas</center></td>
+            </tr>
+            <tr>
+                <th title="Nome Completo">Nome</th><th>Sobrenome</th><th>Idade</th><th>Trabalho</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="1">
+                <td><center>Mauro</center></td><td><center>Gallotta</center></td><td><center>52</center><td><center>Web</center></td>
+            </tr>
+            <tr id="2">
+                <td><center>Alfredo</center></td><td><center>Gallotta</center></td><td><center>47</center><td><center>Marceneiro</center></td>
+            </tr>
+            <tr id="3">
+                <td><center>Fabio</center></td><td><center>Gallotta</center></td><td><center>42</center><td><center>Moto Peças</center></td>
+            </tr>
+            <tr id="4">
+                <td><center>Giovanni</center></td><td><center>Gallotta</center></td><td><center>12</center><td><center>Taxi</center></td>
+            </tr>
+            <tr id="5">
+                <td><center>Giovanna</center></td><td><center>Gallotta</center></td><td><center>30</center><td><center>Uber</center></td>
+            </tr>
+            <tr id="6">
+                <td><center>Gino</center></td><td><center>Gallotta</center></td><td><center>12</center><td><center>Capitão</center></td>
+            </tr>
+            <tr id="7">
+                <td><center>Maria Rita</center></td><td><center>Gallotta</center></td><td><center>61</center><td><center>Agente de Viagem</center></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>FOOTER</td><td>FOOTER</td><td>FOOTER</td><td>FOOTER</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>
